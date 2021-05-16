@@ -1,0 +1,152 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&family=Yanone+Kaffeesatz:wght@200&display=swap');
+
+/* Fuentes
+font-family: 'Teko', sans-serif;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+*/
+
+* {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.1em;
+}
+
+
+/* Estilos del encabezado */
+
+.header {
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    /* Mantiene el header fijo */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container .btnMenu,
+.logo {
+    float: left;
+    position: relative;
+}
+
+.container .btnMenu label {
+    color: #ff8303;
+    padding-top: 1em;
+    padding-left: 1em;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.container .menu {
+    float: right;
+    line-height: 100px;
+}
+
+.container .menu a {
+    display: inline-block;
+    padding: 20px 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #ff8303;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.container .menu a:hover {
+    border-bottom: 2px solid #ff8303;
+    padding: 5px 10px;
+}
+
+
+/* Menú Lateral */
+
+#btnMenu {
+    display: none;
+}
+
+.containerMenu {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btnMenu:checked~.containerMenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contMenu {
+    width: 100%;
+    max-width: 350px;
+    background: #ff8303;
+    height: 100vh;
+    position: absolute;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+#btnMenu:checked~.containerMenu .contMenu {
+    transform: translateX(0%);
+}
+
+.contMenu nav {
+    transform: translateY(10%);
+    position: absolute;
+}
+
+.contMenu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 2px;
+    color: #fff;
+    border-left: 5px solid transparent;
+    transition: all 300ms ease;
+}
+
+.contMenu nav a:hover {
+    border-left: 8px solid #1b1a17;
+    background: #fff;
+    color: #000;
+}
+
+.contMenu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+
+/* Pie de página */
+
+.footer {
+    background-color: #ff8303;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    font-size: 2em;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {}
