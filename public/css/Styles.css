@@ -89,6 +89,10 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
     visibility: visible;
 }
 
+#btnMenu:checked~.footer {
+    visibility: hidden;
+}
+
 .contMenu {
     width: 100%;
     max-width: 350px;

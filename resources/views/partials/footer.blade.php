@@ -1,3 +1,3 @@
 <footer class="footer">
-    SENA &copy; 2020
+    <p>SENA &copy; 2020</p>
 </footer>
